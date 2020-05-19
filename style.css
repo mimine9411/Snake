@@ -1,46 +1,27 @@
-html, body, #container {
-	height: 100%;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	background-color: black;
-}
-
-body, #container, #canvas {
-	overscroll-behavior: contain;
-}
-
-#pause-button {
-	position: fixed;
-	top: 15px;
-	right: 15px;
-	padding: 5px;
-	color: white;
-	background: none;
-	border: none;
-	outline: none;
-}
-
-#score-label
+.displayNone
 {
-	position: fixed;
-	top: 15px;
-	left: 15px;
-	padding: 5px;
-	color: white;
-	border: none;
-	background: none;
-}
-
-#container
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: none;
 }
 
 #canvas
 {
-	border: 1px solid white;
-	box-sizing: border-box;
+    border: solid 1px black;
+    margin-left: 25%;
+}
+
+#scoreDiv
+{
+    height: 26px;
+    margin-left: 700px;
+    margin-bottom: 14px;
+}
+
+.restartScreen{
+	position: absolute;
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

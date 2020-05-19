@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SNAKE</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+        <script type="text/javascript" src="<?= PATH_SCRIPTS ?>jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="<?= PATH_SCRIPTS ?>jquery.validate.min.js"></script>
+        <script type="text/javascript" src="<?= PATH_SCRIPTS ?>monjs.js"></script>
+        -->
+    <script type="text/javascript" src="snake.js" defer async></script>
+</head>
+
+<body>
+    <div id="divMenu">
+        <div>
+            <h1>SNAKE</h1>
+        </div>
+        <button id="buttonStartGame">LANCER LE SNAKE</button>
+    </div>
+    <div id="divGame" class="displayNone">
+        <div id="scoreDiv">
+            <label>Score : <label id="score" readonly>0</label></label>
+        </div>
+        <canvas id="canvas" width="800" height="800"></canvas>
+    </div>
+    <div id="divRestart" class="displayNone">
+        <h1>PERDU</h1>
+        <h3 id="pScore"></h3>
+        <button id="buttonRestartGame">REESSAYER</button>
+    </div>
+</body>
+
+</html>
